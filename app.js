@@ -3,10 +3,8 @@
 // slice extracts a section of a string without modifying original string
 //offsetTop - A Number, representing the top position of the element, in pixels
 
-// const n = document.querySelectorAll(".info");
-// window.addEventListener("load", function() {
-//     console.log(n.parentElement); 
-// });
+
+
 // ********** set date ************
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
@@ -51,7 +49,7 @@ window.addEventListener("scroll", function() {
     if(scrollHeight > 500) {
         topLink.classList.add("show-link"); 
     }
-    else { 
+    else {
         topLink.classList.remove("show-link"); 
     }
 });

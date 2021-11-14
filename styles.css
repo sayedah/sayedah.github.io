@@ -12,48 +12,48 @@ Variables
 */
 
 :root {
-   /* dark shades of primary color*/
-   --clr-primary-1: hsl(332, 86%, 17%);
-   --clr-primary-2: hsl(332, 77%, 27%);
-   --clr-primary-3: hsl(332, 72%, 37%);
-   --clr-primary-4: hsl(332, 63%, 48%);
-   /* primary/main color */
-   --clr-primary-5: hsl(318, 82%, 74%);
-   /* lighter shades of primary color */
-   --clr-primary-6: hsl(315, 100%, 76%);
-   --clr-primary-7: hsl(315, 96%, 82%);
-   --clr-primary-8: hsl(315, 78%, 82%);
-   --clr-primary-9: hsl(315, 90%, 88%);
-   --clr-primary-10: hsl(315, 100%, 96%);
-   /* darkest grey - used for headings */
-   --clr-grey-1: hsl(331, 61%, 16%);
-   --clr-grey-2: hsl(331, 39%, 23%);
-   --clr-grey-3: hsl(325, 34%, 30%);
-   --clr-grey-4: hsl(325, 28%, 39%);
-   /* grey used for paragraphs */
-   --clr-grey-5: hsl(328, 22%, 49%);
-   --clr-grey-6: hsl(328, 23%, 60%);
-   --clr-grey-7: hsl(328, 27%, 70%);
-   --clr-grey-8: hsl(327, 31%, 80%);
-   --clr-grey-9: hsl(327, 33%, 89%);
-   --clr-grey-10: hsl(327, 36%, 96%);
-   --clr-white: #fff;
-   --clr-red-dark: hsl(360, 67%, 44%);
-   --clr-red-light: hsl(360, 71%, 66%);
-   --clr-green-dark: hsl(125, 67%, 44%);
-   --clr-green-light: hsl(125, 71%, 66%);
-   --clr-secondary: rgb(247, 128, 187);
-   --clr-black: #222;
-   --ff-primary: "Roboto", sans-serif;
-   --ff-secondary: "Open Sans", sans-serif;
-   --transition: all 0.3s linear;
-   --spacing: 0.25rem;
-   --lessSpacing: 0.16rem;
-   --radius: 0.5rem;
-   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-   --max-width: 1170px;
-   --fixed-width: 620px;
+/* dark shades of primary color*/
+--clr-primary-1: hsl(332, 86%, 17%);
+--clr-primary-2: hsl(332, 77%, 27%);
+--clr-primary-3: hsl(332, 72%, 37%);
+--clr-primary-4: hsl(332, 63%, 48%);
+/* primary/main color */
+--clr-primary-5: hsl(318, 82%, 74%);
+/* lighter shades of primary color */
+--clr-primary-6: hsl(315, 100%, 76%);
+--clr-primary-7: hsl(315, 96%, 82%);
+--clr-primary-8: hsl(315, 78%, 82%);
+--clr-primary-9: hsl(315, 90%, 88%);
+--clr-primary-10: hsl(315, 100%, 96%);
+/* darkest grey - used for headings */
+--clr-grey-1: hsl(331, 61%, 16%);
+--clr-grey-2: hsl(331, 39%, 23%);
+--clr-grey-3: hsl(325, 34%, 30%);
+--clr-grey-4: hsl(325, 28%, 39%);
+/* grey used for paragraphs */
+--clr-grey-5: hsl(328, 22%, 49%);
+--clr-grey-6: hsl(328, 23%, 60%);
+--clr-grey-7: hsl(328, 27%, 70%);
+--clr-grey-8: hsl(327, 31%, 80%);
+--clr-grey-9: hsl(327, 33%, 89%);
+--clr-grey-10: hsl(327, 36%, 96%);
+--clr-white: #fff;
+--clr-red-dark: hsl(360, 67%, 44%);
+--clr-red-light: hsl(360, 71%, 66%);
+--clr-green-dark: hsl(125, 67%, 44%);
+--clr-green-light: hsl(125, 71%, 66%);
+--clr-secondary: rgb(247, 128, 187);
+--clr-black: #222;
+--ff-primary: "Roboto", sans-serif;
+--ff-secondary: "Open Sans", sans-serif;
+--transition: all 0.3s linear;
+--spacing: 0.25rem;
+--lessSpacing: 0.16rem;
+--radius: 0.5rem;
+--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+--max-width: 1170px;
+--fixed-width: 620px;
 }
 /*
 =============== 
@@ -63,7 +63,7 @@ Global Styles
 html {
   scroll-behavior: smooth;
 }
-,
+*,
 ::after,
 ::before {
   margin: 0;
@@ -99,7 +99,6 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
-  text-align: center;
 }
 h1 {
   font-size: 3rem;
@@ -108,14 +107,21 @@ h2 {
   font-size: 2rem;
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.rem;
+  text-align: center;
 }
 h4 {
   font-size: 0.875rem;
+  text-align: center;
 }
+
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  font-size:2vh;
+  margin-left: 20px;
+  margin-right:20px
+  text-align:center;
+  color:var(--clr-grey-5) 
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -125,10 +131,12 @@ p {
     font-size: 2.5rem;
   }
   h3 {
-    font-size: 1.75rem;
+    font-size: 1rem;
+    text-align: center;
   }
   h4 {
     font-size: 1rem;
+    text-align: center;
   }
   body {
     font-size: 1rem;
@@ -138,6 +146,14 @@ p {
   h3,
   h4 {
     line-height: 1;
+  }
+  p {
+    margin-bottom: 1.25rem;
+    font-size:2vh;
+    margin-left: 20px;
+    margin-right:20px
+    text-align:center;
+    color: var(--clr-grey-5);
   }
 }
 /*  global classes */
@@ -172,24 +188,17 @@ p {
 }
 /* section */
 .section {
-  padding-bottom: 3rem; 
+  padding-bottom: 5rem;
 }
 
-
-/*section text*/
-.section p {
-    text-align: center;
-    font-size: 2.1vh; 
-    padding-left:20px; 
-    padding-right:20px;
-}
-
-.section dl{
-    color:var(--clr-grey-5);
-    font-size:2vh;
-    padding-left: 20px; 
-    padding-right:20px;
-}
+ .section p {
+  margin-bottom: 1.25rem;
+  font-size:2vh;
+  margin-left: 20px;
+  margin-right:20px
+  text-align:center;
+  color: var(--clr-grey-5);
+} 
 
 .section-center {
   width: 90vw;
@@ -241,7 +250,7 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--clr-grey-1);
+  color: var(--clr-primary-3);
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
@@ -315,7 +324,7 @@ nav {
     color: var(--clr-white);
   }
 }
-/* hero */
+/* header background */
 header {
   min-height: 100vh;
   background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
@@ -331,20 +340,20 @@ header {
   color: var(--clr-white);
   text-transform: uppercase;
 }
-.container p {
+/* .container p {
   color: var(--clr-white);
   max-width: 25rem;
   margin: 0 auto;
   margin-bottom: 1.25rem;
-}
+} */
 @media screen and (min-width: 768px) {
   .container p {
     max-width: 40rem;
   }
 }
-/* sections and title */
+/* sections */
 .title {
-    padding-top: 1vh; 
+ padding:8px;
 }
 .title h2 {
   text-align: center;
@@ -354,36 +363,36 @@ header {
   color: var(--clr-secondary);
 }
 #about,
-#experience,
-#projects,
-#resume {
-  height: 100vh;
+#projects {
+  height: 80vh;
 }
 #experience,
 #resume {
+  height:90vh;
   background: var(--clr-white);
 }
 
 .contact {
-    margin:50px;
-    padding:18px;
-    border-color: var(--clr-primary-2);
-    border-style: dashed; 
+  margin:50px;
+  padding:18px;
+  border-color: var(--clr-primary-2);
+  border-style: dashed; 
+  font-weight: bold;
+  text-align: center;
 }
 
 /*image containers*/
 .column {
-    float: left;
-    width: 33.33%;
-  }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  float: left;
+  width: 33.33%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 
-/*footer*/
 footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
@@ -401,7 +410,7 @@ footer p {
   position: fixed;
   bottom: 3rem;
   right: 3rem;
-  background: var(--clr-secondary);
+  background: var(--clr-primary-3);
   width: 2rem;
   height: 2rem;
   display: grid;
@@ -412,6 +421,10 @@ footer p {
 
   visibility: hidden;
   z-index: -100;
+}
+
+.top-link:hover {
+  color: var(--clr-secondary);
 }
 .show-link {
   visibility: visible;
