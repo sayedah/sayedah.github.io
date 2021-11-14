@@ -12,48 +12,48 @@ Variables
 */
 
 :root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(332, 86%, 17%);
-  --clr-primary-2: hsl(332, 77%, 27%);
-  --clr-primary-3: hsl(332, 72%, 37%);
-  --clr-primary-4: hsl(332, 63%, 48%);
-  /* primary/main color */
-  --clr-primary-5: hsl(318, 82%, 74%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(315, 100%, 76%);
-  --clr-primary-7: hsl(315, 96%, 82%);
-  --clr-primary-8: hsl(315, 78%, 82%);
-  --clr-primary-9: hsl(315, 90%, 88%);
-  --clr-primary-10: hsl(315, 100%, 96%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(331, 61%, 16%);
-  --clr-grey-2: hsl(331, 39%, 23%);
-  --clr-grey-3: hsl(325, 34%, 30%);
-  --clr-grey-4: hsl(325, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(328, 22%, 49%);
-  --clr-grey-6: hsl(328, 23%, 60%);
-  --clr-grey-7: hsl(328, 27%, 70%);
-  --clr-grey-8: hsl(327, 31%, 80%);
-  --clr-grey-9: hsl(327, 33%, 89%);
-  --clr-grey-10: hsl(327, 36%, 96%);
-  --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
-  --clr-secondary: rgb(247, 128, 187);
-  --clr-black: #222;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
-  --transition: all 0.3s linear;
-  --spacing: 0.25rem;
-  --lessSpacing: 0.16rem;
-  --radius: 0.5rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
-  --fixed-width: 620px;
+   /* dark shades of primary color*/
+   --clr-primary-1: hsl(332, 86%, 17%);
+   --clr-primary-2: hsl(332, 77%, 27%);
+   --clr-primary-3: hsl(332, 72%, 37%);
+   --clr-primary-4: hsl(332, 63%, 48%);
+   /* primary/main color */
+   --clr-primary-5: hsl(318, 82%, 74%);
+   /* lighter shades of primary color */
+   --clr-primary-6: hsl(315, 100%, 76%);
+   --clr-primary-7: hsl(315, 96%, 82%);
+   --clr-primary-8: hsl(315, 78%, 82%);
+   --clr-primary-9: hsl(315, 90%, 88%);
+   --clr-primary-10: hsl(315, 100%, 96%);
+   /* darkest grey - used for headings */
+   --clr-grey-1: hsl(331, 61%, 16%);
+   --clr-grey-2: hsl(331, 39%, 23%);
+   --clr-grey-3: hsl(325, 34%, 30%);
+   --clr-grey-4: hsl(325, 28%, 39%);
+   /* grey used for paragraphs */
+   --clr-grey-5: hsl(328, 22%, 49%);
+   --clr-grey-6: hsl(328, 23%, 60%);
+   --clr-grey-7: hsl(328, 27%, 70%);
+   --clr-grey-8: hsl(327, 31%, 80%);
+   --clr-grey-9: hsl(327, 33%, 89%);
+   --clr-grey-10: hsl(327, 36%, 96%);
+   --clr-white: #fff;
+   --clr-red-dark: hsl(360, 67%, 44%);
+   --clr-red-light: hsl(360, 71%, 66%);
+   --clr-green-dark: hsl(125, 67%, 44%);
+   --clr-green-light: hsl(125, 71%, 66%);
+   --clr-secondary: rgb(247, 128, 187);
+   --clr-black: #222;
+   --ff-primary: "Roboto", sans-serif;
+   --ff-secondary: "Open Sans", sans-serif;
+   --transition: all 0.3s linear;
+   --spacing: 0.25rem;
+   --lessSpacing: 0.16rem;
+   --radius: 0.5rem;
+   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   --max-width: 1170px;
+   --fixed-width: 620px;
 }
 /*
 =============== 
@@ -63,7 +63,7 @@ Global Styles
 html {
   scroll-behavior: smooth;
 }
-*,
+,
 ::after,
 ::before {
   margin: 0;
@@ -99,6 +99,7 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
+  text-align: center;
 }
 h1 {
   font-size: 3rem;
@@ -110,7 +111,7 @@ h3 {
   font-size: 1.25rem;
 }
 h4 {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
 }
 p {
   margin-bottom: 1.25rem;
@@ -159,12 +160,9 @@ p {
   color: var(--clr-white);
   background: var(--clr-black);
 }
-
-/*button: Check Out Resume*/
 .btn-white {
   color: var(--clr-white);
   border-color: var(--clr-white);
-  background-color: var(--clr-primary-1);
   border-radius: 0;
   padding: 0.5rem 1rem;
 }
@@ -174,7 +172,19 @@ p {
 }
 /* section */
 .section {
-  padding-bottom: 5rem;
+  padding-bottom: 3rem; 
+}
+
+
+/*section text*/
+.section p {
+    text-align: center;
+    font-size: 2.1vh; 
+}
+
+.section dl{
+    color:var(--clr-grey-5);
+    font-size:2vh;
 }
 
 .section-center {
@@ -305,7 +315,7 @@ nav {
 header {
   min-height: 100vh;
   background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(./back1.jpg) center/cover no-repeat;
+    url(back1.jpg) center/cover no-repeat;
 }
 .banner {
   min-height: 100vh;
@@ -329,82 +339,47 @@ header {
   }
 }
 /* sections and title */
+.title {
+    padding-top: 1vh; 
+}
 .title h2 {
-  padding-top: 25px; 
   text-align: center;
   text-transform: uppercase;
-  color: var(--clr-grey-1); 
 }
 .title span {
   color: var(--clr-secondary);
 }
-
-
-/*text for each section*/
-.infoAbt  {
-  color: var(--clr-grey-5);  
-  padding-left: 25px; 
-  text-align: center;
-  font-size: 100%; 
-  font-weight:bold; 
-  letter-spacing: 1px;;
-}
-
-.infoExp  {
-  color: var(--clr-grey-5);  
-  padding-left: 20px; 
-  text-align: center;
-  font-size: 75%;
-  font-weight:bold; 
-  letter-spacing: 1px;;
-}
-
-.infoRes  {
-  color: var(--clr-grey-5);  
-  padding-left: 25px; 
-  text-align: center;
-  font-size: 100%;
-  font-weight:bold; 
-  letter-spacing: 1px;;
-  line-height:200%;
-}
-
-.infoExp h4 {
-  color: var(--clr-primary-1);
-  letter-spacing: var(--lessSpacing);
-}
-
-.infoRes h4 {
-  color: var(--clr-primary-1);
-  letter-spacing: var(--lessSpacing);
-}
-
-.infoExp dt {
-  color:(var(--clr-primary-1));
-  font-size: 120%;
-}
-
-.infoRes dt {
-  padding-top: 50px; 
-  color: var(--clr-grey-5); 
-  font-size: 100%; 
-  font-weight:bold;
-  line-height: 50px;
-}
-
-
-
-#experience {
-  height: 150vh;
-}
- 
 #about,
+#experience,
+#projects,
 #resume {
-  height: 80vh;
+  height: 100vh;
 }
-#experience {
+#experience,
+#resume {
   background: var(--clr-white);
 }
+
+.contact {
+    margin:50px;
+    padding:18px;
+    border-color: var(--clr-primary-2);
+    border-style: dashed; 
+}
+
+/*image containers*/
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*footer*/
 footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
